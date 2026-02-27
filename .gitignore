@@ -1,0 +1,46 @@
+# =========================
+# ENTORNO VIRTUAL (Python)
+# =========================
+venv/
+env/
+.venv/
+
+# =========================
+# VARIABLES DE ENTORNO
+# =========================
+.env
+.env.local
+.env.development
+.env.production
+
+# =========================
+# ARCHIVOS PYTHON
+# =========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# =========================
+# LOGS
+# =========================
+*.log
+logs/
+
+# =========================
+# NODE / REACT
+# =========================
+node_modules/
+dist/
+build/
+.next/
+out/
+
+
+
+# =========================
+# IDEs
+# =========================
+.vscode/
+.idea/
