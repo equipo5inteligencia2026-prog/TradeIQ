@@ -14,7 +14,7 @@ render_interface("Dashboard")
 # 2. FILTROS 
 c_f1, c_f2 = st.columns([1, 1])
 with c_f1:
-    selected_ticker = st.selectbox("ACTIVO", ["FSM", "TSLA", "NVDA", "MSFT", "AMZN"], index=0)
+    selected_ticker = st.selectbox("ACTIVO", ["FSM", "VOLCABC1", "BVN", "ABX", "ABX"], index=0)
 with c_f2:
     time_range = st.select_slider("RANGO", options=["1mo", "3mo", "1y"], value="1mo")
 st.markdown('</div>', unsafe_allow_html=True)
@@ -105,7 +105,7 @@ with col_left:
 
 with col_right:
     filas_html = ""
-    for t in ["FSM", "TSLA", "NVDA", "MSFT", "AMZN"]:
+    for t in ["FSM", "VOLCABC1", "BVN", "ABX", "ABX"]:
         # Pasamos is_watchlist=True para que la función cree una entrada de caché distinta
         d_temp = get_data_safely(t, "5d", is_watchlist=True)
         if d_temp is not None and not d_temp.empty:
