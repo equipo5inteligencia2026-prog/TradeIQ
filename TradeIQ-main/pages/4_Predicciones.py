@@ -19,7 +19,7 @@ render_interface("Predicciones de Inteligencia Artificial")
 col_f1, col_f2, col_btn = st.columns([1.5, 1, 1], gap="medium")
 with col_f1:
     st.markdown('<label style="font-size:11px;font-family:monospace;color:gray;">ACTIVO</label>', unsafe_allow_html=True)
-    activo = st.selectbox("Activo", ["FSM", "BHP", "BVN", "ABX", "SCCO"], label_visibility="collapsed")
+    activo = st.selectbox("Activo", ["FSM", "BVN", "ABX", "BHP", "SCCO", "BTC-USD"], label_visibility="collapsed")
 with col_f2:
     st.markdown('<label style="font-size:11px;font-family:monospace;color:gray;">HORIZONTE</label>', unsafe_allow_html=True)
     horizonte = st.selectbox("Horizonte", [7, 14, 30], index=2, label_visibility="collapsed")

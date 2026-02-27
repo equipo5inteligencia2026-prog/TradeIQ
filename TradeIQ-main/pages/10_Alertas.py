@@ -51,7 +51,7 @@ with col_new:
     st.markdown('<div class="section-header">Nueva Alerta</div>', unsafe_allow_html=True)
     
     with st.container():
-        a_asset = st.selectbox("ACTIVO", ["AAPL", "TSLA", "BTC", "NVDA", "MSFT"])
+        a_asset = st.selectbox("ACTIVO", ["FSM", "BVN", "ABX", "BHP", "SCCO"])
         a_condition = st.selectbox("TIPO DE ALERTA", [
             "Precio superior a", 
             "Precio inferior a", 

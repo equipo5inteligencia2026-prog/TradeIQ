@@ -218,8 +218,8 @@ with col_right:
                             portfolio_id=str(uuid.uuid4()),
                             user_id=new_id,
                             name="Mi Portafolio",
-                            total_cash=10000.0,
                             total_value=10000.0,
+                            cash_available=10000.0,
                             created_at=datetime.utcnow()
                         )
                         session.add(new_user)

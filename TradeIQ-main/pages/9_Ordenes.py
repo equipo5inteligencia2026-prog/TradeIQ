@@ -38,9 +38,9 @@ st.markdown("""
 # 2. INICIALIZACIÓN DEL ESTADO
 if 'order_history' not in st.session_state:
     st.session_state.order_history = [
-        {"hora": "10:32", "activo": "FSM", "tipo": "COMPRA", "cant": 5, "precio": 184.10, "estado": "EJECUTADA"},
-        {"hora": "09:15", "activo": "BVN", "tipo": "COMPRA", "cant": 2, "precio": 872.50, "estado": "EJECUTADA"},
-        {"hora": "08:55", "activo": "ABX", "tipo": "VENTA", "cant": 10, "precio": 245.30, "estado": "EJECUTADA"},
+        {"hora": "10:32", "activo": "AAPL", "tipo": "COMPRA", "cant": 5, "precio": 184.10, "estado": "EJECUTADA"},
+        {"hora": "09:15", "activo": "NVDA", "tipo": "COMPRA", "cant": 2, "precio": 872.50, "estado": "EJECUTADA"},
+        {"hora": "08:55", "activo": "TSLA", "tipo": "VENTA", "cant": 10, "precio": 245.30, "estado": "EJECUTADA"},
     ]
 
 # 3. GRID PRINCIPAL
@@ -50,10 +50,10 @@ with col_form:
     st.markdown('<div class="section-header">Nueva Orden <span class="card-badge">● IB CONECTADO</span></div>', unsafe_allow_html=True)
     
     o_type = st.selectbox("OPERACIÓN", ["COMPRA", "VENTA", "SHORT"])
-    o_asset = st.selectbox("ACTIVO", ["FSM", "ABX", "BVN", "BHP", "SCCO"])
+    o_asset = st.selectbox("ACTIVO", ["FSM", "BVN", "ABX", "BHP", "SCCO"])
     o_qty = st.number_input("CANTIDAD", min_value=1, value=10)
     
-    precio_mercado = {"FSM": 187.42, "ABX": 242.10, "BVN": 875.20, "BHP": 415.80, "SCCO": 62100.00}
+    precio_mercado = {"AAPL": 187.42, "TSLA": 242.10, "NVDA": 875.20, "MSFT": 415.80, "BTC": 62100.00}
     o_price = precio_mercado.get(o_asset, 100.0)
     
     valor_total = o_qty * o_price

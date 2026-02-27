@@ -33,7 +33,7 @@ col_tkr, col_strat, col_per, col_cap, col_btns = st.columns([0.8, 1.5, 1, 1, 1.5
 with col_tkr:
     st.markdown("<label>ACTIVO</label>", unsafe_allow_html=True)
     # Lista de empresas populares o puedes dejar que el usuario escriba
-    symbol = st.selectbox("Ticker", ["FSM", "BHP", "BVN", "ABX", "SCCO", "BTC-USD"], index=0, label_visibility="collapsed")
+    symbol = st.selectbox("Ticker", ["FSM", "BVN", "ABX", "BHP", "SCCO", "BTC-USD"], index=0, label_visibility="collapsed")
 
 with col_strat:
     st.markdown("<label>ESTRATEGIA IA</label>", unsafe_allow_html=True)

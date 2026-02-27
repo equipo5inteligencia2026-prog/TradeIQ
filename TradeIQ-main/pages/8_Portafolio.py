@@ -72,7 +72,7 @@ with col_dist:
     st.markdown('<div class="card-title">Distribución del Portafolio</div>', unsafe_allow_html=True)
     c1, c2 = st.columns([1, 1])
     with c1:
-        labels = ['FSM', 'BVN', 'ABX', 'BHP', 'SCCO']
+        labels = ["FSM", "BVN", "ABX", "BHP", "SCCO"]
         values = [32, 24, 18, 14, 12]
         colors = ['#00d4ff', '#00e676', '#ffb300', '#ff4444', '#7c4dff']
         fig_donut = go.Figure(data=[go.Pie(labels=labels, values=values, hole=.75, marker=dict(colors=colors))])
@@ -82,11 +82,11 @@ with col_dist:
     with c2:
         st.markdown(f"""
             <div style="padding-top: 10px;">
-                <div class="port-item"><div class="port-dot" style="background:#00d4ff"></div><span class="port-sym">FSM</span><span class="port-pct">32%</span><span class="port-pnl up">+$3,840</span></div>
-                <div class="port-item"><div class="port-dot" style="background:#00e676"></div><span class="port-sym">BVN</span><span class="port-pct">24%</span><span class="port-pnl up">+$2,880</span></div>
-                <div class="port-item"><div class="port-dot" style="background:#ffb300"></div><span class="port-sym">ABX</span><span class="port-pct">18%</span><span class="port-pnl dn">-$432</span></div>
-                <div class="port-item"><div class="port-dot" style="background:#ff4444"></div><span class="port-sym">BHP</span><span class="port-pct">14%</span><span class="port-pnl up">+$2,016</span></div>
-                <div class="port-item"><div class="port-dot" style="background:#7c4dff"></div><span class="port-sym">SCCO</span><span class="port-pct">12%</span><span class="port-pnl up">+$691</span></div>
+                <div class="port-item"><div class="port-dot" style="background:#00d4ff"></div><span class="port-sym">AAPL</span><span class="port-pct">32%</span><span class="port-pnl up">+$3,840</span></div>
+                <div class="port-item"><div class="port-dot" style="background:#00e676"></div><span class="port-sym">NVDA</span><span class="port-pct">24%</span><span class="port-pnl up">+$2,880</span></div>
+                <div class="port-item"><div class="port-dot" style="background:#ffb300"></div><span class="port-sym">TSLA</span><span class="port-pct">18%</span><span class="port-pnl dn">-$432</span></div>
+                <div class="port-item"><div class="port-dot" style="background:#ff4444"></div><span class="port-sym">BTC</span><span class="port-pct">14%</span><span class="port-pnl up">+$2,016</span></div>
+                <div class="port-item"><div class="port-dot" style="background:#7c4dff"></div><span class="port-sym">MSFT</span><span class="port-pct">12%</span><span class="port-pnl up">+$691</span></div>
             </div>
         """, unsafe_allow_html=True)
 
@@ -108,10 +108,10 @@ st.markdown("""
                 <tr><th>ACTIVO</th><th>CANTIDAD</th><th>P. PROMEDIO</th><th>P. ACTUAL</th><th>P&L $</th><th>P&L %</th><th>ACCIÓN</th></tr>
             </thead>
             <tbody>
-                <tr><td style='color:#000'>FSM</td><td style='color:#000'>80</td><td style='color:#000'>$139.38</td><td style='color:#000'>$187.42</td><td class="up">+$3,840</td><td class="up">+34.5%</td><td><button class="btn-sell">VENDER</button></td></tr>
-                <tr><td style='color:#000'>BVN</td><td style='color:#000'>14</td><td style='color:#000'>$668.00</td><td style='color:#000'>$875.20</td><td class="up">+$2,900</td><td class="up">+31.0%</td><td><button class="btn-sell">VENDER</button></td></tr>
-                <tr><td style='color:#000'>ABX</td><td style='color:#000'>36</td><td style='color:#000'>$254.10</td><td style='color:#000'>$242.10</td><td class="dn">-$432</td><td class="dn">-4.7%</td><td><button class="btn-sell">VENDER</button></td></tr>
-                <tr><td style='color:#000'>SCCO</td><td style='color:#000'>13</td><td style='color:#000'>$362.70</td><td style='color:#000'>$415.80</td><td class="up">+$691</td><td class="up">+14.6%</td><td><button class="btn-sell">VENDER</button></td></tr>
+                <tr><td style='color:#000'>AAPL</td><td style='color:#000'>80</td><td style='color:#000'>$139.38</td><td style='color:#000'>$187.42</td><td class="up">+$3,840</td><td class="up">+34.5%</td><td><button class="btn-sell">VENDER</button></td></tr>
+                <tr><td style='color:#000'>NVDA</td><td style='color:#000'>14</td><td style='color:#000'>$668.00</td><td style='color:#000'>$875.20</td><td class="up">+$2,900</td><td class="up">+31.0%</td><td><button class="btn-sell">VENDER</button></td></tr>
+                <tr><td style='color:#000'>TSLA</td><td style='color:#000'>36</td><td style='color:#000'>$254.10</td><td style='color:#000'>$242.10</td><td class="dn">-$432</td><td class="dn">-4.7%</td><td><button class="btn-sell">VENDER</button></td></tr>
+                <tr><td style='color:#000'>MSFT</td><td style='color:#000'>13</td><td style='color:#000'>$362.70</td><td style='color:#000'>$415.80</td><td class="up">+$691</td><td class="up">+14.6%</td><td><button class="btn-sell">VENDER</button></td></tr>
             </tbody>
         </table>
     </div>

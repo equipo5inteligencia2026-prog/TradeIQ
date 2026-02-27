@@ -25,7 +25,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # 4. SELECTOR DE ACTIVO
-activo_noticias = st.selectbox("ACTIVO", ["FSM", "BHP", "BVN", "ABX"], label_visibility="collapsed")
+activo_noticias = st.selectbox("ACTIVO", ["FSM", "BVN", "ABX", "BHP", "SCCO"], label_visibility="collapsed")
 
 # 5. GRID SUPERIOR
 col_sent, col_chart = st.columns([1, 1.8], gap="medium")
