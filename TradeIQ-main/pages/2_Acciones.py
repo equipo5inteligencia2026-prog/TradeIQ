@@ -21,7 +21,7 @@ def get_stock_info(ticker_symbol):
 # 3. BUSCADOR
 col_search, _ = st.columns([1, 2])
 with col_search:
-    symbol = st.selectbox("ACTIVO", ["AAPL", "TSLA", "NVDA", "MSFT", "AMZN", "GOOGL"], label_visibility="collapsed")
+    symbol = st.selectbox("ACTIVO", ["FSM", "BHP", "BVN", "ABX", "SCCO"], label_visibility="collapsed")
 
 info = get_stock_info(symbol)
 price = info.get('regularMarketPrice', info.get('currentPrice', 0))

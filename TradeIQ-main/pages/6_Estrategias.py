@@ -32,7 +32,7 @@ st.markdown("""
 # 2. CONTROLES DENTRO DE LA PÁGINA
 col_head1, col_head2 = st.columns([2, 1])
 with col_head1:
-    activo = st.selectbox("ACTIVO", ["AAPL", "TSLA", "BTC-USD", "NVDA", "MSFT"], label_visibility="collapsed")
+    activo = st.selectbox("ACTIVO", ["FSM", "BHP", "BVN", "ABX", "SCCO"], label_visibility="collapsed")
 with col_head2:
     confianza = st.select_slider("Nivel de Confianza IA", options=[50, 60, 70, 80, 90, 100], value=80, label_visibility="collapsed")
 
